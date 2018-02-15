@@ -9,16 +9,16 @@ Also, please keep in mind that your handed in code will form the basis of any ev
 
 ## Setup your system
 
-### node.js v6.x
+### node.js
 
-To serve the challenge's index.html page and for additional tasks you may need (section [Requirements](#requirements), steps 6. and 7.), we recommend you use [node.js](https://nodejs.org) v6.x. In case you want to manage several node versions on your machine, we recommend [nvm](https://github.com/creationix/nvm) for Mac/*nix and [nodist](https://github.com/marcelklehr/nodist) for Windows.
+To automatically serve the challenge's index.html page and for additional tasks you may need (section [Requirements](#requirements), steps 6. and 7.), we recommend you use [node.js](https://nodejs.org) v8.x but any other recent (>=6.0.0) version should be fine also. In case you want to manage several node versions on your machine, we recommend [nvm](https://github.com/creationix/nvm) for Mac/*nix and [nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows.
 
 
 ### Install NPM packages and run dev
 
 Once you have node.js installed, open up your OS's Terminal/Bash application, change into the root folder of the challenge (where the file `package.json` is located) and run `npm install`.
 
-After all NPM packages installed successfully, you should run `npm run dev`). It will open a browser tab with src/index.html running in http://localhost:8080/.
+After all NPM packages installed successfully it will open a browser tab with src/index.html running in http://localhost:8080/ (if you can't see that tab in your browser try running `npm run dev`).
 
 
 ## The challenge

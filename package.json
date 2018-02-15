@@ -8,13 +8,14 @@
   "scripts": {
     "dev": "npm run serve",
     "build": "",
-    "serve": "http-server ./src -s -c-1 -a localhost -o"
+    "serve": "http-server ./src -s -c-1 -a localhost -o",
+    "postinstall": "npm run dev"
   },
   "devDependencies": {
     "http-server": "^0.9.0"
   },
   "dependencies": {},
   "engines": {
-    "node": "^6.9"
+    "node": ">=6.0.0"
   }
 }
