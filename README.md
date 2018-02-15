@@ -21,11 +21,6 @@ Once you have node.js installed, open up your OS's Terminal/Bash application, ch
 After all NPM packages installed successfully, you should run `npm run dev`). It will open a browser tab with src/index.html running in http://localhost:8080/.
 
 
-### IDE configuration
-
-Please configure your IDE to use the [`.editorconfig`](http://editorconfig.org/#download), [`.stylelintrc`](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/complementary-tools.md#editor-plugins) and [`.eslintrc`](http://eslint.org/docs/user-guide/integrations#editors) files you find in the project's root folder. This way you will see you linting errors directly in your IDE.
-
-
 ## The challenge
 
 * To build a working html page (with a `shop-slider` component) looking like the `design/shop_w_slider.png` layout.
