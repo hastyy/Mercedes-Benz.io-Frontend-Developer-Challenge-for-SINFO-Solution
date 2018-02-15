@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "npm run serve",
     "build": "",
-    "serve": "http-server ./src -s -c1 -a localhost -o"
+    "serve": "http-server ./src -s -c-1 -a localhost -o"
   },
   "devDependencies": {
     "http-server": "^0.9.0"
