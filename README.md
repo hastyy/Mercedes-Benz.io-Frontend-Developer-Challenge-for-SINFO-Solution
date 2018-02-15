@@ -85,7 +85,7 @@ If you want to impress us, try to get to the Bonus steps, but don't forget the f
 
 5. Bonus #1 - *We will only take that into consideration when all of the above points work as expected.*
     - The page should be responsive in a way that on small devices (mobile) or narrow browser windows it shows less products.
-    - The look and breakpoints should be: 1 product visible when < 480px width; 2 products visible when < 768px width; and 3 products when >= 768px.
+    - The look and breakpoints should be: 1 product visible when < 620px width; 2 products visible when < 880px width; and 3 products when >= 880px.
 
 6. Bonus #2 - *We will only take that into consideration when all of the above points work as expected.*
     - If you've come this far.. Congratulations!! And if you still have time try the following:
