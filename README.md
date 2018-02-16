@@ -67,6 +67,7 @@ If you want to impress us, try to get to the Bonus steps, but don't forget the f
 1. The page should have 3 visible products as shown in the `design/shop_w_slider.png`.
     - Initially no items should be added to the virtual "Shopping Cart"; in other words, all `quantity` fields and the `Total` value should be 0 (zero).
     - You can use the images in `src/images` for each "product" or use some other good-looking "real" images that you like :)
+    - The SVG `-` and `+` images are provided in `src/images`.
     - You should style the elements using the measurements that are in `design/shop_w_slider--measurements.png`.
 
 2. The user can add products to the virtual "Shopping Cart" and remove them too.
@@ -74,7 +75,8 @@ If you want to impress us, try to get to the Bonus steps, but don't forget the f
     - The `quantity` field - and the `Total` value - should never be less than 0 (zero).
 
 3. The page should have 8 products with a slider functionality.
-    - Only 3 products are visible, but two arrow buttons should exist to move/slide the "product" list left or right. The SVG arrow images are provided in `src/images`.
+    - Only 3 products are visible, but two arrow buttons should exist to move/slide the "product" list left or right.
+    - The SVG arrow images are provided in `src/images`.
     - Each moving/sliding interaction should move the "product" list by 3 products/positions (so if showing product 1, 2 and 3 and then clicking on the "next" arrow will show product 4, 5 and 6 after the animation stops).
     - We would like you to use Lory - http://meandmax.github.io/lory/ for the slider animation (moving "product" list's position in the "x" axis);
 
