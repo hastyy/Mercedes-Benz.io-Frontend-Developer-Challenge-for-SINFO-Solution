@@ -95,7 +95,6 @@ If you want to impress us, try to get to the Bonus steps, but don't forget the f
     - The look and breakpoints should be: 1 product visible when < 620px width; 2 products visible when < 880px width; and 3 products when >= 880px.
 
 6. Bonus #2 - *We will only take this into consideration when all of the above points work as expected.*
-    - If you've come this far.. Congratulations!! And if you still have time try the following:
     - Add new tasks to minify the HTML, CSS and JavaScript files and put the result in a `dist` folder at the root level. Those tasks should also move all other necessary files (images, etc) for the page to behave and look as expected when served from that `dist` folder.
     - You can use Webpack, Gulp, Grunt or any other tools/`NPM packages` that may help you with this task.
 
@@ -104,6 +103,7 @@ If you want to impress us, try to get to the Bonus steps, but don't forget the f
     - You can use Webpack, Gulp, Grunt or any other tools/`NPM packages` that may help you with this task.
 
 8. Bonus #4 - *We will only take this into consideration when all of the above points work as expected.*
+    - If you've come this far.. Congratulations!! And if you still have time try the following:
     - Backup your project, duplicate it, remove the Lory dependency and re-create the slider using only your own "vanilla" JavaScript.
     - You should only send us your challenge project with this "vanilla" JavaScript slider implementation if the slider is fully working and isn't "breaking" any of the other features.
     - If for some reason (time, complexity, etc) you can't finish the slider implementation using only "vanilla" JavaScript, please just send us the (backup) challenge that uses Lory for the slider.
