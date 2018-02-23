@@ -6,11 +6,19 @@ These products go from the site that sells our vehicles to the applications that
 
 The major purpose of **Mercedes-Benz.io** Frontend Developers is to provide high quality software for web based user interfaces, following MVP principles and enterprise frontend software development standards.
 
-
 **Please read *carefully* through *all* of the following instructions before you begin with the implementation.**
 
 
 Also, please keep in mind that your handed in code will form the basis of any eventual next steps in an formal recruiting process. It is therefore only in your own best interest to be able to explain every code decision you took.
+
+
+## The challenge
+
+* To build a working html page (with a `shop-slider` component) looking like the `design/shop_w_slider.png` layout.
+* Displaying and working correctly in latest Chrome and Firefox.
+* Expressive and accessible HTML markup.
+* Consistent and organized CSS.
+* Readable, performant and organized JavaScript, following best practices.
 
 
 ## Setup your system
@@ -27,16 +35,7 @@ Once you have node.js installed, open up your OS's Terminal/Bash application, ch
 After all NPM packages installed successfully it will open a browser tab with src/index.html running in http://localhost:8080/ (if you can't see that tab in your browser try running `npm run dev`).
 
 
-## The challenge
-
-* To build a working html page (with a `shop-slider` component) looking like the `design/shop_w_slider.png` layout.
-* Displaying and working correctly in latest Chrome and Firefox.
-* Expressive and accessible HTML markup.
-* Consistent and organized CSS.
-* Readable, performant and organized JavaScript, following best practices.
-
-
-### Coding guidelines
+## Coding guidelines
 
 1. HTML markup
     Make sure the document contains semantically correct HTML5 markup [[help]](http://html5doctor.com/lets-talk-about-semantics/).
@@ -62,7 +61,7 @@ After all NPM packages installed successfully it will open a browser tab with sr
     - Use comments when necessary.
 
 
-### Requirements
+## Requirements
 
 Please develop the following features sequentially, as you shouldn't start an item of this list if any of the previous aren't finished.
 
