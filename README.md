@@ -1,4 +1,10 @@
-THIS IS A CONFIDENTIAL EXERCISE, WHICH IS PART OF A RECRUITING PROCESS AND AS SUCH, IT SHOULD NOT BE SHARED, DISTRIBUTED OR EXPOSED ANYWHERE. DOING SO, WILL AUTOMATICALLY DISQUALIFY YOU FROM THE PROCESS.
+# MB.io - SINFO Frontend Challenge
+
+We, at **Mercedes-Benz.io**, build products for our customers.
+
+These products go from the site that sells our vehicles to the applications that control them.
+
+The major purpose of **Mercedes-Benz.io** Frontend Developers is to provide high quality software for web based user interfaces, following MVP principles and enterprise frontend software development standards.
 
 
 **Please read *carefully* through *all* of the following instructions before you begin with the implementation.**
@@ -126,7 +132,11 @@ We've got an initial folder and file structure in `src` prepared for you:
 
 ## Troubleshooting
 
-If you experience problems during the challenge send a message to the Mercedes-Benz.io person you are in contact with, describing the problem, steps to reproduce, screenshots and error logs of your Terminal/Bash application. Anything that may help in the troubleshooting process.
+If you have any questions regarding the challenge or find a bug with the exercise, please use GitHub issues.
+
+To talk with us and other developers about technical aspects of the challenge [open a support ticket](https://github.com/mercedesbenzio/SINFO-frontend-challenge/issues) or mail us at `goncalo.sequeira@mercedes-benz.io` if you need to talk to us.
+
+Please describe the issue(s), steps to reproduce, screenshots and error logs of your Terminal/Bash application. Anything that may help in the troubleshooting process.
 
 
 ## What are you expected to hand in?
