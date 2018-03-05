@@ -1,10 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <main class="container">
+    
+    <section class="products">
+      <!-- Product Card Component -->
+      <div class="product">
+        <figure class="product__image">
+          <img src="images/img1.png" alt="Product 1">
+        </figure>
+        <h4 class="product__title">Product 1 title</h4>
+        <p class="product__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <footer class="product__controls">
+          <section class="product__controls__wrapper">
+            <button class="product__controls__action">
+              <img class="product__controls__action__icon" src="images/minus.svg" alt="Decrement">
+            </button>
+            <input class="product__controls__quantity" type="text" value="0">
+            <button class="product__controls__action">
+              <img class="product__controls__action__icon" src="images/plus.svg" alt="Increment">
+            </button>
+          </section>
+          <p class="product__price">39,90 €</p>
+        </footer>
+      </div>
+
+      <!-- Product Card Component -->
+      <div class="product">
+        <figure class="product__image">
+          <img src="images/img2.png" alt="Product 2">
+        </figure>
+        <h4 class="product__title">Product 2 title</h4>
+        <p class="product__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <footer class="product__controls">
+          <section class="product__controls__wrapper">
+            <button class="product__controls__action">
+              <img class="product__controls__action__icon" src="images/minus.svg" alt="Decrement">
+            </button>
+            <input class="product__controls__quantity" type="text" value="0">
+            <button class="product__controls__action">
+              <img class="product__controls__action__icon" src="images/plus.svg" alt="Increment">
+            </button>
+          </section>
+          <p class="product__price">104,90 €</p>
+        </footer>
+      </div>
+
+      <!-- Product Card Component -->
+      <div class="product">
+        <figure class="product__image">
+          <img src="images/img3.png" alt="Product 3">
+        </figure>
+        <h4 class="product__title">Product 3 title</h4>
+        <p class="product__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <footer class="product__controls">
+          <section class="product__controls__wrapper">
+            <button class="product__controls__action">
+              <img class="product__controls__action__icon" src="images/minus.svg" alt="Decrement">
+            </button>
+            <input class="product__controls__quantity" type="text" value="0">
+            <button class="product__controls__action">
+              <img class="product__controls__action__icon" src="images/plus.svg" alt="Increment">
+            </button>
+          </section>
+          <p class="product__price">4,50 €</p>
+        </footer>
+      </div>
+    </section>
+
+    <section class="total">
+      <div class="total__divider"></div>
+      <p class="total__display">
+        Total: <span class="total__value">0,00 €</span>
+      </p>
+    </section>
+
+  </main>
 
 </body>
 </html>
