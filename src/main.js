@@ -1,4 +1,4 @@
-import './vendor/normalize.css';
+import 'normalize.css';
 import './styles.css';
 import Product from './components/product/product';
 import PriceContainer from './components/price/price';

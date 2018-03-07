@@ -2,15 +2,16 @@
   "name": "frontend-challenge",
   "version": "1.0.0",
   "description": "Mercedes-Benz.io Frontend Developer Challenge for SINFO",
-  "author": "",
+  "author": "João Dias",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
+    "serve": "webpack-dev-server",
     "dev": "npm run serve",
-    "build": "webpack",
-    "serve": "http-server ./src -s -c-1 -a localhost -o",
-    "postinstall": "npm run dev"
+    "start": "npm run dev",
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack -p",
+    "postinstall": "npm run serve"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -20,9 +21,11 @@
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.4",
     "http-server": "^0.9.0",
     "image-webpack-loader": "^4.1.0",
+    "rimraf": "^2.6.2",
     "style-loader": "^0.20.2",
     "url-loader": "^1.0.1",
     "webpack": "^3.11.0",
@@ -31,6 +34,7 @@
   },
   "dependencies": {
     "lory.js": "^2.4.1",
+    "normalize.css": "^8.0.0",
     "redux": "^3.7.2"
   },
   "engines": {

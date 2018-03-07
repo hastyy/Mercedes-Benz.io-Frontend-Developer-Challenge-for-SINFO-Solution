@@ -1,13 +1,21 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const VENDOR_LIBS = [
+    "lory.js",
+    "redux"
+];
 
 module.exports = {
-    entry: './src/main.js',
+    entry: {
+        bundle: './src/main.js',
+        vendor: VENDOR_LIBS
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'js/[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -20,7 +28,7 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: 'css-loader',
-                    publicPath: '/dist'
+                    publicPath: '/dist/css'
                 }),
                 test: /\.css$/
             },
@@ -42,13 +50,21 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ['vendor', 'manifest']
+        }),
         new ExtractTextPlugin({
-            filename: 'styles.css',
+            filename: 'css/styles.css',
             disable: false,
             allChunks: true
         }),
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: 'src/index.html',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                conservativeCollapse: true
+            }
         })
     ]
 };
