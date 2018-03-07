@@ -12,6 +12,8 @@ const controlInputs = document.querySelectorAll('.product__controls__quantity');
 const priceViews = document.querySelectorAll('.product__price');
 const totalPriceView = document.querySelector('.total__value');
 const slider = document.querySelector('.js_slider');
+const sliderControlPrev = document.querySelector('.prev');
+const sliderControlNext = document.querySelector('.next');
 
 const products = [];
 
@@ -39,7 +41,12 @@ priceViews.forEach((view, index) => {
 });
 
 new PriceContainer(totalPriceView);
-new Slider(slider, { slidesToScroll: 3, infinite: 3 }, products.length);
+new Slider(
+    slider,
+    { slidesToScroll: 3, infinite: 3 },
+    products.length,
+    { prev: sliderControlPrev, next: sliderControlNext }
+);
 
 //
 store.dispatch(actions.initProductData(products.map(p => p.getPrice())));

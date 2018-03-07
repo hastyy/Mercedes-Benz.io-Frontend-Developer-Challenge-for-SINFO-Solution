@@ -44,7 +44,7 @@ export default class Product {
 
             if (!quantity) {
                 e.target.value = store.getState().quantities[this.index];
-                return
+                return;
             }
 
             store.dispatch(actions.changeProductQuantity(this.index, quantity));
