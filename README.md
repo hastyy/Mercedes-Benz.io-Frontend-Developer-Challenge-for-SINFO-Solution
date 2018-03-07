@@ -1,4 +1,4 @@
-# MB.io - SINFO Frontend Challenge
+# MB.io - SINFO Frontend Challenge - Solution by João Dias
 
 We, at **Mercedes-Benz.io**, build products for our customers.
 
@@ -32,8 +32,14 @@ To automatically serve the challenge's index.html page and for additional tasks 
 
 Once you have node.js installed, open up your OS's Terminal/Bash application, change into the root folder of the challenge (where the file `package.json` is located) and run `npm install`.
 
-After all NPM packages installed successfully it will open a browser tab with src/index.html running in http://localhost:8080/ (if you can't see that tab in your browser try running `npm run dev`).
+After all NPM packages installed successfully it will open a browser tab with src/index.html running in http://localhost:8080/ (if you can't see that tab in your browser try running `npm start` or `npm run dev`).
 
+
+### Production ready
+
+Whenever you want to build a production-ready image of the project, change into the root folder of the challenge (where the file `package.json` is located) and run `npm run build`.
+
+The process will take a few seconds to complete, but when it does you should have a new `dist` folder which contains all the static assets that compose the project. These files are already opmitized for a production environment.
 
 ## Coding guidelines
 
