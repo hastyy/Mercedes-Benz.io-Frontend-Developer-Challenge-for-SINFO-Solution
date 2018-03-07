@@ -41,12 +41,11 @@ priceViews.forEach((view, index) => {
 });
 
 new PriceContainer(totalPriceView);
-new Slider(
-    slider,
-    { slidesToScroll: 3, infinite: 3 },
-    products.length,
-    { prev: sliderControlPrev, next: sliderControlNext }
-);
 
-//
+new Slider(slider, products.length, {
+    prev: sliderControlPrev,
+    next: sliderControlNext
+});
+
+// Populate the store with price values
 store.dispatch(actions.initProductData(products.map(p => p.getPrice())));

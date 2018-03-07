@@ -24,3 +24,15 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 619px) {
+    .container {
+        width: 232px;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 879px) {
+    .container {
+        width: 496px;
+    }
+}

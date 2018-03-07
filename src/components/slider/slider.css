@@ -62,3 +62,19 @@
     width: 20px;
     height: 20px;
 }
+
+@media (max-width: 619px) {
+    .slider, .frame {
+        width: 232px;
+    }
+
+    .js_slide {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 879px) {
+    .slider, .frame {
+        width: 496px;
+    }
+}
