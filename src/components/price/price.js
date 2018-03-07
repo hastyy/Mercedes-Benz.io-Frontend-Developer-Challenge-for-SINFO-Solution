@@ -1,3 +1,4 @@
+import './price.css';
 import store from '../../store/store';
 import { formatPriceToDisplay } from '../utility';
 

@@ -2,6 +2,7 @@ import './vendor/normalize.css';
 import './styles.css';
 import Product from './components/product/product';
 import PriceContainer from './components/price/price';
+import Slider from './components/slider/slider';
 import actions from './store/actions/actions';
 import store from './store/store';
 
@@ -10,6 +11,7 @@ const controlButtons = document.querySelectorAll('.product__controls__action');
 const controlInputs = document.querySelectorAll('.product__controls__quantity');
 const priceViews = document.querySelectorAll('.product__price');
 const totalPriceView = document.querySelector('.total__value');
+const slider = document.querySelector('.js_slider');
 
 const products = [];
 
@@ -37,6 +39,7 @@ priceViews.forEach((view, index) => {
 });
 
 new PriceContainer(totalPriceView);
+new Slider(slider, { slidesToScroll: 3, infinite: 3 }, products.length);
 
 //
 store.dispatch(actions.initProductData(products.map(p => p.getPrice())));

@@ -1,3 +1,4 @@
+import './product.css';
 import actions from '../../store/actions/actions';
 import store from '../../store/store';
 

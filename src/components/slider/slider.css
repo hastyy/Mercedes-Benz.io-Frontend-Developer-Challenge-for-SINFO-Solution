@@ -1,0 +1,64 @@
+/**
+ * (optional) define here the style definitions which should be applied on the slider container
+ * e.g. width including further controls like arrows etc.
+ */
+.slider {
+    max-width: 760px;
+    position: relative;
+    margin: auto;
+}
+
+.frame {
+    /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+    /*width: 880px;*/
+    width: 760px;
+
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: inline-block;
+}
+
+.js_slide {
+    position: relative;
+    display: inline-block;
+
+    /**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+    /*width: 880px;?*/
+    width: 232px;
+    margin-right: 32px;
+}
+
+.js_slide:last-of-type {
+    margin-right: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+}
+
+.next {
+    right: -45px;
+}
+
+.prev {
+    left: -45px;
+}
+
+.next img, .prev img {
+    width: 20px;
+    height: 20px;
+}

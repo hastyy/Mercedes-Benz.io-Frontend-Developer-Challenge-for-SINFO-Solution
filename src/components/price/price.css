@@ -1,0 +1,22 @@
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 70px;
+}
+
+.total__divider {
+    border-top: 1px solid #fff;
+    width: 38px;
+}
+
+.total__display {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: lighter;
+    margin: 20px 0 0;
+}
+
+.total__value {
+    font-weight: bold;
+}

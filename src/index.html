@@ -1,94 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
-  <!--<link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
 </head>
 <body>
 
-  <main class="container">
+    <main class="container">
+
+        <!-- Products Slider -->
+        <section class="slider js_slider">
+            <div class="frame js_frame">
+                <ul class="slides js_slides">
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img1.png") %> alt="Product 1">
+                            </figure>
+                            <h4 class="product__title">Product 1 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">39,90 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img2.png") %> alt="Product 2">
+                            </figure>
+                            <h4 class="product__title">Product 2 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">104,90 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img3.png") %> alt="Product 3">
+                            </figure>
+                            <h4 class="product__title">Product 3 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">4,50 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img4.png") %> alt="Product 4">
+                            </figure>
+                            <h4 class="product__title">Product 4 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">17,75 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img5.png") %> alt="Product 5">
+                            </figure>
+                            <h4 class="product__title">Product 5 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">59,90 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img6.png") %> alt="Product 6">
+                            </figure>
+                            <h4 class="product__title">Product 6 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">9,00 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img7.png") %> alt="Product 7">
+                            </figure>
+                            <h4 class="product__title">Product 7 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">98,25 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                    <li class="js_slide">
+
+                        <!-- Product Card Component -->
+                        <div class="product">
+                            <figure class="product__image">
+                                <img src=<%= require("./images/img8.png") %> alt="Product 8">
+                            </figure>
+                            <h4 class="product__title">Product 8 title</h4>
+                            <p class="product__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <footer class="product__controls">
+                                <section class="product__controls__wrapper">
+                                    <button class="product__controls__action" disabled>
+                                        <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
+                                    </button>
+                                    <input class="product__controls__quantity" type="number" min="0" value="0">
+                                    <button class="product__controls__action">
+                                        <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
+                                    </button>
+                                </section>
+                                <p class="product__price">72,60 €</p>
+                            </footer>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- Slider Controls -->
+            <span class="js_prev prev">
+                <img src=<%= require("./images/prev.svg") %> alt="Previous">
+            </span>
+            <span class="js_next next">
+                <img src=<%= require("./images/next.svg") %> alt="Next">
+            </span>
+        </section>
+
+        <!-- Total Price Display -->
+        <section class="total">
+            <div class="total__divider"></div>
+            <p class="total__display">
+                Total:
+                <span class="total__value">0,00 €</span>
+            </p>
+        </section>
+
+    </main>
     
-    <section class="products">
-      <!-- Product Card Component -->
-      <div class="product">
-        <figure class="product__image">
-          <img src=<%= require("./images/img1.png") %> alt="Product 1">
-        </figure>
-        <h4 class="product__title">Product 1 title</h4>
-        <p class="product__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <footer class="product__controls">
-          <section class="product__controls__wrapper">
-            <button class="product__controls__action" disabled>
-              <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
-            </button>
-            <input class="product__controls__quantity" type="number" min="0" value="0">
-            <button class="product__controls__action">
-              <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
-            </button>
-          </section>
-          <p class="product__price">39,90 €</p>
-        </footer>
-      </div>
-
-      <!-- Product Card Component -->
-      <div class="product">
-        <figure class="product__image">
-          <img src=<%= require("./images/img2.png") %> alt="Product 2">
-        </figure>
-        <h4 class="product__title">Product 2 title</h4>
-        <p class="product__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <footer class="product__controls">
-          <section class="product__controls__wrapper">
-            <button class="product__controls__action" disabled>
-              <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
-            </button>
-            <input class="product__controls__quantity" type="number" value="0">
-            <button class="product__controls__action">
-              <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
-            </button>
-          </section>
-          <p class="product__price">104,90 €</p>
-        </footer>
-      </div>
-
-      <!-- Product Card Component -->
-      <div class="product">
-        <figure class="product__image">
-          <img src=<%= require("./images/img3.png") %> alt="Product 3">
-        </figure>
-        <h4 class="product__title">Product 3 title</h4>
-        <p class="product__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <footer class="product__controls">
-          <section class="product__controls__wrapper">
-            <button class="product__controls__action" disabled>
-              <img class="product__controls__action__icon" src=<%= require("./images/minus.svg") %> alt="Decrement">
-            </button>
-            <input class="product__controls__quantity" type="number" value="0">
-            <button class="product__controls__action">
-              <img class="product__controls__action__icon" src=<%= require("./images/plus.svg") %> alt="Increment">
-            </button>
-          </section>
-          <p class="product__price">4,50 €</p>
-        </footer>
-      </div>
-    </section>
-
-    <section class="total">
-      <div class="total__divider"></div>
-      <p class="total__display">
-        Total: <span class="total__value">0,00 €</span>
-      </p>
-    </section>
-
-  </main>
-
 </body>
 </html>
