@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 760px;
+    width: 232px;
     margin: 40px auto;
 }
 
@@ -25,14 +25,20 @@ body {
     justify-content: space-between;
 }
 
-@media (max-width: 619px) {
+/*@media (max-width: 619px) {
     .container {
         width: 232px;
     }
-}
+}*/
 
 @media (min-width: 620px) and (max-width: 879px) {
     .container {
         width: 496px;
+    }
+}
+
+@media (min-width: 880px) {
+    .container {
+        width: 760px;
     }
 }

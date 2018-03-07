@@ -3,7 +3,7 @@
  * e.g. width including further controls like arrows etc.
  */
 .slider {
-    max-width: 760px;
+    width: 232px;
     position: relative;
     margin: auto;
 }
@@ -13,7 +13,7 @@
      * (optional) wrapper width, specifies width of the slider frame.
      */
     /*width: 880px;*/
-    width: 760px;
+    width: 232px;
 
     position: relative;
     font-size: 0;
@@ -35,10 +35,6 @@
      */
     /*width: 880px;?*/
     width: 232px;
-    margin-right: 32px;
-}
-
-.js_slide:last-of-type {
     margin-right: 0;
 }
 
@@ -63,7 +59,7 @@
     height: 20px;
 }
 
-@media (max-width: 619px) {
+/*@media (max-width: 619px) {
     .slider, .frame {
         width: 232px;
     }
@@ -71,10 +67,32 @@
     .js_slide {
         margin-right: 0;
     }
-}
+}*/
 
 @media (min-width: 620px) and (max-width: 879px) {
     .slider, .frame {
         width: 496px;
+    }
+
+    .js_slide {
+        margin-right: 32px;
+    }
+
+    .js_slide:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 880px) {
+    .slider, .frame {
+        width: 760px;
+    }
+
+    .js_slide {
+        margin-right: 32px;
+    }
+
+    .js_slide:last-of-type {
+        margin-right: 0;
     }
 }
